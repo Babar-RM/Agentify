@@ -3,6 +3,19 @@ FastAPI Backend Server for LeetCode Analyzer
 Complete REST API with Course Management
 """
 
+import sys
+import os
+
+# Auto-configure UTF-8 console output on Windows to prevent UnicodeEncodeError with emojis
+if sys.platform == 'win32':
+    try:
+        if hasattr(sys.stdout, 'reconfigure'):
+            sys.stdout.reconfigure(encoding='utf-8')
+        if hasattr(sys.stderr, 'reconfigure'):
+            sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr

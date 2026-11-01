@@ -7,6 +7,16 @@ import json
 import os
 import sys
 
+# Auto-configure UTF-8 console output on Windows to prevent UnicodeEncodeError with emojis
+if sys.platform == 'win32':
+    try:
+        if hasattr(sys.stdout, 'reconfigure'):
+            sys.stdout.reconfigure(encoding='utf-8')
+        if hasattr(sys.stderr, 'reconfigure'):
+            sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 try:
     from gemini_integration import AutomatedLeetCodeSystem
 except ImportError:

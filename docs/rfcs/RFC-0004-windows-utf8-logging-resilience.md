@@ -3,7 +3,7 @@
 - **RFC ID:** RFC-0004
 - **Title:** Windows Console Encoding & Cross-Platform Logging Resilience
 - **Author:** Antigravity Pair Programmer
-- **Status:** Proposed
+- **Status:** Implemented
 - **Priority:** Medium (P1)
 - **Created Date:** 2026-11-01
 - **Target Component:** Python Backend Runtime & Console Output
@@ -109,6 +109,6 @@ logging.basicConfig(
 ---
 
 ## 6. Acceptance Criteria
-- [ ] Running `python main.py` in standard PowerShell with no environment variables set completes without `UnicodeEncodeError`.
-- [ ] Running `uvicorn api_server:app --port 8000` starts and prints status messages without encoding crashes.
-- [ ] Both Windows and Linux/macOS environments produce identical console output.
+- [x] Running `python main.py` in standard PowerShell with no environment variables set completes without `UnicodeEncodeError`.
+- [x] Running `uvicorn api_server:app --port 8000` starts and prints status messages without encoding crashes.
+- [x] Both Windows and Linux/macOS environments produce identical console output.
