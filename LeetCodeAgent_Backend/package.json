@@ -9,6 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "axios": "^1.13.2",
+>>>>>>> 39a72c7fb6c1db0392a1e3c7ea28e1acadce5c01
     "firebase": "^12.6.0",
     "next": "16.0.3",
     "react": "19.2.0",
