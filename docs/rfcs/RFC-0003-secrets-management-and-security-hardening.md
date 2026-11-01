@@ -3,7 +3,7 @@
 - **RFC ID:** RFC-0003
 - **Title:** Secrets Management & Security Hardening
 - **Author:** Antigravity Pair Programmer
-- **Status:** Proposed
+- **Status:** Implemented
 - **Priority:** Critical (P0)
 - **Created Date:** 2026-11-01
 - **Target Component:** Security, Environment Configuration & `.gitignore`
@@ -150,9 +150,9 @@ NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your-measurement-id
 ---
 
 ## 6. Acceptance Criteria
-- [ ] `e:\Agentfy\.gitignore` exists and is tracked.
-- [ ] `e:\Agentfy\.gitignore.txt` is removed.
-- [ ] `git check-ignore -v backend/config.json` outputs matching ignore rule.
-- [ ] `backend/config.example.json` exists with placeholders and no real secret values.
-- [ ] `frontend/.env.example` exists with required variables.
-- [ ] Staging all files (`git add .`) does NOT stage `config.json` or `.env` files.
+- [x] `e:\Agentfy\.gitignore` exists and is tracked.
+- [x] `e:\Agentfy\.gitignore.txt` is removed.
+- [x] `git check-ignore -v backend/config.json` outputs matching ignore rule.
+- [x] `backend/config.example.json` exists with placeholders and no real secret values.
+- [x] `frontend/.env.example` exists with required variables.
+- [x] Staging all files (`git add .`) does NOT stage `config.json` or `.env` files.

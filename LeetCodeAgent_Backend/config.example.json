@@ -1,0 +1,20 @@
+{
+  "gemini_api_key": "YOUR_GEMINI_API_KEY_HERE",
+  
+  "database": {
+    "host": "your-neon-host.us-east-1.aws.neon.tech",
+    "dbname": "neondb",
+    "user": "neondb_owner",
+    "password": "YOUR_NEON_PASSWORD_HERE",
+    "port": 5432,
+    "sslmode": "require"
+  },
+  
+  "email": {
+    "api_key": "YOUR_BREVO_API_KEY_HERE",
+    "sender_email": "your-verified-sender@example.com",
+    "sender_name": "Agentify"
+  },
+  
+  "github_token": "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN_OPTIONAL"
+}
